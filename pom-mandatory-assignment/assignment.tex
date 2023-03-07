@@ -18,9 +18,55 @@ In this project, the group are using a Top-Down estimation process because of th
 	\item There is no contract involved.
 	\item There is no current customer, only general practitioners who have offered to guide and therefore no details are needed for the customers.
 \end{itemize}
-%Write a POS for your project using the template on p. 126 in Effective Project Management(Wysocki)
 
-%Identify the risks in the project, create a risk severity matrix, and explain how you willhandle the risks
+\begin{center}
+	\begin{tabular}[h]{|c|c|c|}
+		\hline
+		Task & Dependency & Estimated Time (hours) \\ \hline
+		ISymptom & & \\ \hline
+		Region & &  \\ \hline
+		IDisease & &  \\ \hline
+		Symptom & ISymptom, Region &  \\ \hline
+		Disease & IDisease & \\ \hline
+		DatabaseController & Disease, Symptom & \\ \hline
+		DataController & DatabaseController &  \\ \hline
+		DataRetriver & DatabaseController & \\ \hline
+		IDeterminer & &  \\ \hline
+		RDDeterminer & IDeterminer, DataRetriver & \\ \hline
+	\end{tabular}
+\end{center}
+
+Slut: 28.April
+%Write a POS for your project using the template on p. 126 in Effective Project Management(Wysocki)
+\begin{center}
+	\begin{tabular}[h]{|p{7em}|p{5em}|p{5em}|p{5em}|p{5em}|}
+		\hline
+		& {\scriptsize Project Overview Statement} & {\scriptsize Rare disease Predictor} & & {\scriptsize Simon dos Reis Spedsbjerg} \\ \hline
+		{\scriptsize Problem/Opportunity} & \multicolumn{4}{|p{20em}|}{\scriptsize We see a risk that a healthcare professional might miss certain rare conditions a patient might suffer from, because the rarity and lack of knowledge makes it so the doctor or nurse might not suspect it and thereby miss it.}\\ \hline
+		{\scriptsize Goal} & \multicolumn{4}{|p{20em}|}{\scriptsize To develop an application that will help the health care professional to deduce whether a patient suffers from a rare disease}\\ \hline
+		{\scriptsize Objectives} & \multicolumn{4}{|p{20em}|}{\scriptsize \begin{itemize}
+		\item Develop a Backend system to calculate diseases based on symptoms
+		\item Develop a Frontend to allow interaction from any computer
+		\item Establish a server to host a beta version
+		\item Deploy public version
+			 \end{itemize}
+		 } \\ \hline
+	 {\scriptsize Success Criteria} & \multicolumn{4}{|p{20em}|}{\scriptsize\begin{itemize}
+	 	\item The system can predict diseases based on given symptoms
+	 	\item The system is positively received by general practitioners
+	 	\item The system is being used by general practitioners
+	 \end{itemize}} \\ \hline
+ 	{\scriptsize Assumptions, Risks, Obstacles} & \multicolumn{4}{|p{20em}|}{\scriptsize
+ 	\begin{itemize}
+ 		\item All general practitioners have access to the internet
+ 		\item Server Errors might occur
+ 		\item Some general practitioners don't have the required computer knowledge to use the system
+ 	\end{itemize}	
+ }\\ \hline
+& {\scriptsize Simon Spedsbjerg} & {\scriptsize $07-03-23$} & & \\ \hline
+	\end{tabular}
+\end{center}
+%Identify the risks in the project, create a risk severity matrix, and explain how you will handle the risks
 
 %Estimate the tasks in your WBS. Argue for the selection of estimation method
 
