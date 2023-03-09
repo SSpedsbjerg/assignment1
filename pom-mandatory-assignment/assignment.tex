@@ -1,5 +1,6 @@
 \section{Answer part one}
 %Identify the stakeholders in your project and describe their interests in the project and  how you will handle them
+This tool is meant to help a general practitioner in their task of diagnosing patients. The team is without higher management and therefore not included.
 \begin{center}
 	\begin{tabular}[h]{|c|p{25em}|}
 		\hline
@@ -9,6 +10,10 @@
 		Healthcare companies & The companies that hires the General Practitioners are the one who will most likely be paying for our service, their interested is whether this will earn them more revenue either in the long run or short term.\\ \hline
 	\end{tabular}
 \end{center}
+The general partitioners is the one who would get most excited for this application, but is not expected to have much power. They will be kept informed about the program and it's features.
+\newline
+The Healthcare companies have a lot say in what software they will be using, and they have an interest in providing good cheap care. If we have a product which improve their service, a high interest is formed. This means that the healthcare companies are to be managed closely during the development to achieve success.
+
 
 %Create a WBS for your project and document it as a table
 In this project, the group are using a Top-Down estimation process because of the following reasons:
@@ -22,34 +27,42 @@ For the development of the product, it is split up in 3 section in the WBS, Fron
 \begin{center}
 	\includegraphics[width=.5\columnwidth]{./WBS}
 \end{center}
+The Frontend contains 3 task, API, to get the data from the backend. The list is showing the probability of different diseases and includes the function to format the disease in the certain orders depending on the practitioners wish. DataController handles the data between frontend and backend and RDDeterminer is the one that determines the risk of rare diseases.
 
 \begin{center}
 	\begin{tabular}[h]{|c|c|c|}
 		\hline
-		Task & Dependency & Estimated Time (hours) \\ \hline
-		ISymptom & & \\ \hline
-		Region & &  \\ \hline
-		IDisease & &  \\ \hline
-		Symptom & ISymptom, Region &  \\ \hline
-		Disease & IDisease & \\ \hline
-		DatabaseController & Disease, Symptom & \\ \hline
-		DataController & DatabaseController &  \\ \hline
-		DataRetriver & DatabaseController & \\ \hline
-		IDeterminer & &  \\ \hline
-		RDDeterminer & IDeterminer, DataRetriver & \\ \hline
-		API & DataController & \\ \hline
-		Homepage & & \\ \hline
-		Infrastructure & & \\ \hline
-		IP \& DNS & Homepage & \\ \hline
+		Task & Dependency \\ \hline
+		Gather Theory & \\ \hline
+		Analysis & Theory \\ \hline
+		Design & Analysis \\ \hline
+		ISymptom & \\ \hline
+		Region &  \\ \hline
+		IDisease &  \\ \hline
+		Symptom & ISymptom, Region  \\ \hline
+		Disease & IDisease \\ \hline
+		DatabaseController & Disease, Symptom \\ \hline
+		DataController & DatabaseController  \\ \hline
+		DataRetriver & DatabaseController \\ \hline
+		IDeterminer &  \\ \hline
+		RDDeterminer & IDeterminer, DataRetriver \\ \hline
+		API & DataController \\ \hline
+		Homepage & \\ \hline-
+		Infrastructure & \\ \hline
+		IP \& DNS & Homepage  \\ \hline
+		Write Test & Design \\ \hline
+		Review Software & RDDeterminer, API, IP \& DNS, Write Test \\ \hline
+		Documentation & Review Software \\ \hline
 	\end{tabular}
 \end{center}
+This table includes all task in development of this project, Documentation includes all task after the design phase.
 
-Slut: 28.April
+%Slut: 28.April
 %Write a POS for your project using the template on p. 126 in Effective Project Management(Wysocki)
 \begin{center}
 	\begin{tabular}[h]{|p{7em}|p{5em}|p{5em}|p{5em}|p{5em}|}
 		\hline
-		& {\scriptsize Project Overview Statement} & {\scriptsize Rare disease Predictor} & & {\scriptsize Simon dos Reis Spedsbjerg} \\ \hline
+		& {\scriptsize Project Overview Statement} & {\scriptsize Rare disease Predictor} & & {\scriptsize } \\ \hline
 		{\scriptsize Problem/Opportunity} & \multicolumn{4}{|p{20em}|}{\scriptsize We see a risk that a healthcare professional might miss certain rare conditions a patient might suffer from, because the rarity and lack of knowledge makes it so the doctor or nurse might not suspect it and thereby miss it.}\\ \hline
 		{\scriptsize Goal} & \multicolumn{4}{|p{20em}|}{\scriptsize To develop an application that will help the health care professional to deduce whether a patient suffers from a rare disease}\\ \hline
 		{\scriptsize Objectives} & \multicolumn{4}{|p{20em}|}{\scriptsize \begin{itemize}
@@ -71,7 +84,7 @@ Slut: 28.April
  		\item Some general practitioners don't have the required computer knowledge to use the system
  	\end{itemize}	
  }\\ \hline
-& {\scriptsize Simon Spedsbjerg} & {\scriptsize $07-03-23$} & & \\ \hline
+& {\scriptsize } & {\scriptsize $07-03-23$} & & \\ \hline
 	\end{tabular}
 \end{center}
 %Identify the risks in the project, create a risk severity matrix, and explain how you will handle the risks
@@ -98,8 +111,31 @@ There are ways to combat some of the risks involved in the project, but some of 
 	\item For the risk involving the lack of data, a way to avoid it making or breaking the system would be to create dummy data in its place, if the data is not acquired. Granted this will end up with a result that cannot be practically used, it would end up with a system that can showcase the functionality required of it, and it would be a simple case of swapping around data sets.
 	\item For the Health companies not adding it to their system or GP’s not wanting to use it if its not on their system is another risk we just must accept. It is not in our hands if the company does not want to add it nor if the GPs don’t want to use anything outside their known toolbox.
 \end{itemize}
-
+\pagebreak
 %Estimate the tasks in your WBS. Argue for the selection of estimation method
+For the task in this project, each has been given an estimated time. This time is based on previous experience on other projects.
+
+\begin{center}
+	\begin{tabular}[h]{|c|c|}
+		\hline
+		Task & Estimated Time \\ \hline
+		ISymptom & $<1$\\ \hline
+		Region & $<1$\\ \hline
+		IDisease & $<1$\\ \hline
+		Symptom &  $<1$\\ \hline
+		Disease & $<1$\\ \hline
+		DatabaseController & $2$\\ \hline
+		DataController &  $2$\\ \hline
+		DataRetriver & $<1$\\ \hline
+		IDeterminer &  $<1$\\ \hline
+		RDDeterminer & $14$\\ \hline
+		API & $1$\\ \hline
+		Homepage & $<1$\\ \hline
+		Infrastructure & $<1$\\ \hline
+		IP \& DNS & $1$\\ \hline
+	\end{tabular}
+\end{center}
+
 
 %Create a network diagram for your project and identify 1) the earliest finish date for theproject and 2) the critical path
 \pagebreak
@@ -113,7 +149,7 @@ The diagram above is a network diagram created in the node style for the project
 	\item The earliest finish date based on the network diagram would take 62 calendar units.
 	\item The critical path in this network diagram is the following sequence.
 	\begin{itemize}
-		\item A->B->C->D->G->I->K->L->M
+		\item A$\rightarrow$B$\rightarrow$C$\rightarrow$D$\rightarrow$G$\rightarrow$I$\rightarrow$K$\rightarrow$L$\rightarrow$M
 	\end{itemize}
 \end{itemize}
 %Create  a  short  presentation  that  you  can  use  in  class  to  present  your  results  to  othergroups
