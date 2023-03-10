@@ -1,33 +1,32 @@
-\section{Answer part one}
 %Identify the stakeholders in your project and describe their interests in the project and  how you will handle them
-This tool is meant to help a general practitioner in their task of diagnosing patients. The team is without higher management and therefore not included.
+This tool is meant to help a general practitioner in their task of diagnosing patients. The team is without higher management and therefore not included in stakeholder analysis.
 \begin{center}
-	\begin{tabular}[h]{|c|p{25em}|}
+	\begin{tabular}[h]{|c|p{22em}|}
 		\hline
 		Stakeholder & Interest \\ \hline
 		General Practitioners & They are our target demographic as they use the service to provide better healthcare to their clients. Developing our program will be able to increase the confidence of their diagnoses. \\ \hline
 		Developers & They are interested in it because their business and thereby wages depends on it, delivering a good product could gain them good advantages when it comes to income and or future job prospects. \\ \hline
-		Healthcare companies & The companies that hires the General Practitioners are the one who will most likely be paying for our service, their interested is whether this will earn them more revenue either in the long run or short term.\\ \hline
+		Healthcare companies & The companies that hires the General Practitioners are the one who will most likely be paying for our service, their interest is whether this will earn them more revenue either in the long run or short term.\\ \hline
 	\end{tabular}
 \end{center}
 The general partitioners is the one who would get most excited for this application, but is not expected to have much power. They will be kept informed about the program and it's features.
 \newline
-The Healthcare companies have a lot say in what software they will be using, and they have an interest in providing good cheap care. If we have a product which improve their service, a high interest is formed. This means that the healthcare companies are to be managed closely during the development to achieve success.
+The Healthcare companies have a lot say in what software they will be using, and they have an interest in providing good cheap care. If we have a product which improve their service, a high interest is formed. This means that the healthcare companies are to be managed closely during the development to achieve success. Regular detailed meetings is therefore a must for this stakeholder.
 
-
+\pagebreak
 %Create a WBS for your project and document it as a table
 In this project, the group are using a Top-Down estimation process because of the following reasons:
 \begin{itemize}
 	\item It's the first time the group develops a project for healthcare and thereby don't know completely what is involved yet.
 	\item It's a small project and the group only have two developers, the scope of the project is small.
 	\item There is no contract involved.
-	\item There is no current customer, only general practitioners who have offered to guide and therefore no details are needed for the customers.
+	\item There is no current customer, only general practitioners who have offered to guide and therefore no details are needed for the customers at the current iteration.
 \end{itemize}
 For the development of the product, it is split up in 3 section in the WBS, Frontend, Backend and server. 
 \begin{center}
 	\includegraphics[width=.5\columnwidth]{./WBS}
 \end{center}
-The Frontend contains 3 task, API, to get the data from the backend. The list is showing the probability of different diseases and includes the function to format the disease in the certain orders depending on the practitioners wish. DataController handles the data between frontend and backend and RDDeterminer is the one that determines the risk of rare diseases.
+The Frontend contains 3 task, API, to get the data from the backend. The list is showing the probability of different diseases and includes the function to format the disease in the certain orders depending on the practitioners wish. DataController handles the data between frontend and backend and RDDeterminer is the one that determines the risk of rare diseases. The program is webbased and has to be hosted on server which needs infrastructure setup and IP \& DNS configuration.
 
 \begin{center}
 	\begin{tabular}[h]{|c|c|c|}
@@ -66,38 +65,38 @@ This table includes all task in development of this project, Documentation inclu
 		{\scriptsize Problem/Opportunity} & \multicolumn{4}{|p{20em}|}{\scriptsize We see a risk that a healthcare professional might miss certain rare conditions a patient might suffer from, because the rarity and lack of knowledge makes it so the doctor or nurse might not suspect it and thereby miss it.}\\ \hline
 		{\scriptsize Goal} & \multicolumn{4}{|p{20em}|}{\scriptsize To develop an application that will help the health care professional to deduce whether a patient suffers from a rare disease}\\ \hline
 		{\scriptsize Objectives} & \multicolumn{4}{|p{20em}|}{\scriptsize \begin{itemize}
-		\item Develop a Backend system to calculate diseases based on symptoms
-		\item Develop a Frontend to allow interaction from any computer
-		\item Establish a server to host a beta version
-		\item Deploy public version
-			 \end{itemize}
-		 } \\ \hline
-	 {\scriptsize Success Criteria} & \multicolumn{4}{|p{20em}|}{\scriptsize\begin{itemize}
-	 	\item The system can predict diseases based on given symptoms
-	 	\item The system is positively received by general practitioners
-	 	\item The system is being used by general practitioners
-	 \end{itemize}} \\ \hline
- 	{\scriptsize Assumptions, Risks, Obstacles} & \multicolumn{4}{|p{20em}|}{\scriptsize
- 	\begin{itemize}
- 		\item All general practitioners have access to the internet
- 		\item Server Errors might occur
- 		\item Some general practitioners don't have the required computer knowledge to use the system
- 	\end{itemize}	
- }\\ \hline
-& {\scriptsize } & {\scriptsize $07-03-23$} & & \\ \hline
+				\item Develop a Backend system to calculate diseases based on symptoms
+				\item Develop a Frontend to allow interaction from any computer
+				\item Establish a server to host a beta version
+				\item Deploy public version
+			\end{itemize}
+		} \\ \hline
+		{\scriptsize Success Criteria} & \multicolumn{4}{|p{20em}|}{\scriptsize\begin{itemize}
+				\item The system can predict diseases based on given symptoms
+				\item The system is positively received by general practitioners
+				\item The system is being used by general practitioners
+		\end{itemize}} \\ \hline
+		{\scriptsize Assumptions, Risks, Obstacles} & \multicolumn{4}{|p{20em}|}{\scriptsize
+			\begin{itemize}
+				\item All general practitioners have access to the internet
+				\item Server Errors might occur
+				\item Some general practitioners don't have the required computer knowledge to use the system
+			\end{itemize}	
+		}\\ \hline
+		& {\scriptsize } & {\scriptsize $07-03-23$} & & \\ \hline
 	\end{tabular}
 \end{center}
 %Identify the risks in the project, create a risk severity matrix, and explain how you will handle the risks
 \begin{center}
 	\centering
-	\begin{tabular}[h]{|p{4em}|p{6em}|p{6em}|p{6em}|p{6em}|p{6em}|}
+	\begin{tabular}[h]{|p{3em}|p{5em}|p{5em}|p{5em}|p{5em}|p{5em}|}
 		\hline
-		Very High (71-90\%)  &  Healthcare tech companies do not want to add the product to their catalogue of software. &         The development team is composed of students meaning there is a general inexperience for developing. & & &                                                                     \\ \hline                                                                                                                                                                                                                                                
-		High   (51-70\%)   & & & Lack of knowledge in the field area could lead to a worse quality product & & \\ \hline
-		Medium (31-50\%)  & & Some general practitioners might not have the computer knowledge to use the system. & The lack of data for diseases and symptoms. & Since it is new territory to develop medical based software, there might be certain elements we do not know of that would add elements out of scope & \\ \hline
-		Low   (11-30\%)   & & & & & \\ \hline
-		Very Low (<10\%) & The algorithm could produce a faulty result. & & GP’s might not use the product due to it not being on their main system. & The servers can go down leading to down time. & \\ \hline
-		Likelihood / Impact & Very Low & Low & Medium & High & Very High \\ \hline
+		{\scriptsize Very High (71-90\%)}  &  {\scriptsize Healthcare tech companies do not want to add the product to their catalogue of software.} & {\scriptsize The development team is composed of students meaning there is a general inexperience for developing.} & & &                                                                     \\ \hline                                                                                                                                                                                                                                                
+		{\scriptsize High   (51-70\%)}   & & & {\scriptsize Lack of knowledge in the field area could lead to a worse quality product} & & \\ \hline
+		{\scriptsize Medium (31-50\%)}  & & {\scriptsize Some general practitioners might not have the computer knowledge to use the system.} & {\scriptsize The lack of data for diseases and symptoms.} & {\scriptsize Since it is new territory to develop medical based software, there might be certain elements we do not know of that would add elements out of scope} & \\ \hline
+		{\scriptsize Low   (11-30\%)}   & & & & & \\ \hline
+		{\scriptsize Very Low (<10\%)} & {\scriptsize The algorithm could produce a faulty result.} & & {\scriptsize GP’s might not use the product due to it not being on their main system.} & {\scriptsize The servers can go down leading to down time.} & \\ \hline
+		{\scriptsize Likelihood / Impact} &{\scriptsize Very Low} &{\scriptsize Low} &{\scriptsize Medium} &{\scriptsize High} &{\scriptsize Very High} \\ \hline
 	\end{tabular}
 \end{center} 
 \pagebreak
@@ -106,42 +105,53 @@ There are ways to combat some of the risks involved in the project, but some of 
 \begin{itemize}
 	\item For the risks involving the usage of the product and problems possibly arising with it, it would be possible to try and avoid that risk with the creation of a better user interface to make it easier for GP’s who does not have a lot of general computer knowledge. 
 	\item For the risks involving inexperience with the medical software field, the only way to try combat it, would be to try and overestimate how much time it will take to develop and create the system, that way it would allow the team more time than normal to complete the system, and it would not cause any issues for the stakeholders, due to going over the planned time and possibly even finishing earlier than the planned time given.
-	\item The risk involving the actual system and algorithm, the risk can be reduced if not removed by creating multiple tests to try and break the algorithm. If the algorithm passes the tests, the risk should not have an effect.
+	\item The risk involving the actual system and algorithm, the risk can be reduced if not removed by creating multiple tests to try and break the algorithm. If the algorithm passes the tests, the risk likelihood should be lower.
 	\item For the risks of having the servers go down, that is something we have to accept that is always a possibility that can happen for any system, the only way to reduce the chances for this to happen, would be to choose a reliable server host which has the least amount of downtime over a longer period.
 	\item For the risk involving the lack of data, a way to avoid it making or breaking the system would be to create dummy data in its place, if the data is not acquired. Granted this will end up with a result that cannot be practically used, it would end up with a system that can showcase the functionality required of it, and it would be a simple case of swapping around data sets.
-	\item For the Health companies not adding it to their system or GP’s not wanting to use it if its not on their system is another risk we just must accept. It is not in our hands if the company does not want to add it nor if the GPs don’t want to use anything outside their known toolbox.
+	\item For the Health companies not adding it to their system or GP’s not wanting to use it if its not on their system is another risk we just must accept. It is not in our hands if the company does not want to add it nor if the GPs don’t want to use anything outside their known toolbox. Having close contact and keeping health companies well informed does decrease the likely hood of them not adopting the software.
 \end{itemize}
 \pagebreak
 %Estimate the tasks in your WBS. Argue for the selection of estimation method
-For the task in this project, each has been given an estimated time. This time is based on previous experience on other projects.
+For the task in this project, each has been given an estimated time. This time is based on previous experience on other projects. The time that is estimated to be under 1 is calculated in total as an half.
 
 \begin{center}
-	\begin{tabular}[h]{|c|c|}
+	\begin{tabular}[h]{|c|c|c|}
 		\hline
 		Task & Estimated Time \\ \hline
-		ISymptom & $<1$\\ \hline
-		Region & $<1$\\ \hline
-		IDisease & $<1$\\ \hline
-		Symptom &  $<1$\\ \hline
-		Disease & $<1$\\ \hline
-		DatabaseController & $2$\\ \hline
-		DataController &  $2$\\ \hline
-		DataRetriver & $<1$\\ \hline
-		IDeterminer &  $<1$\\ \hline
-		RDDeterminer & $14$\\ \hline
-		API & $1$\\ \hline
-		Homepage & $<1$\\ \hline
-		Infrastructure & $<1$\\ \hline
-		IP \& DNS & $1$\\ \hline
+		Gather Theory & 10 \\ \hline
+		Analysis & 10 \\ \hline
+		Design & 10 \\ \hline
+		ISymptom & $<1$ \\ \hline
+		Region & $<1$ \\ \hline
+		IDisease & $<1$ \\ \hline
+		Symptom & $<1$  \\ \hline
+		Disease & $<1$ \\ \hline
+		DatabaseController & $2$ \\ \hline
+		DataController & $2$  \\ \hline
+		DataRetriver & $<1$ \\ \hline
+		IDeterminer & $<1$ \\ \hline
+		RDDeterminer & $14$ \\ \hline
+		API & $1$ \\ \hline
+		Homepage & $<1$ \\ \hline-
+		Infrastructure & $<1$ \\ \hline
+		IP \& DNS & $1$  \\ \hline
+		Write Test & 5 \\ \hline
+		Review Software & 5 \\ \hline
+		Documentation & 32\\ \hline
+		Total & $ 96 $ \\ \hline
 	\end{tabular}
 \end{center}
 
+After which COCOMO calculation\cite{NasaCOCOMOCalculation} has been used to increase or decrease confidence in our estimations. The estimations was based on the teams view of their own abilities. The project is expected according to the calculations to take 2.2 man months which aligns with our own expectations for a two man development team.
 
 %Create a network diagram for your project and identify 1) the earliest finish date for theproject and 2) the critical path
 \pagebreak
-\begin{figure}
-	\includegraphics[width=40em,keepaspectratio]{Network Diagram.png}
-\end{figure}
+\begin{center}
+	\begin{figure}
+		\includegraphics[width=42em,keepaspectratio]{Network Diagram.png}
+	\end{figure}
+\end{center}
+
 
 The diagram above is a network diagram created in the node style for the project. All the timeframes are approx. estimations we assumed how long each part would take. This network diagram is created with the entire bachelor as a project, where report writing creating the software and anything else required is included.
 
@@ -153,6 +163,3 @@ The diagram above is a network diagram created in the node style for the project
 	\end{itemize}
 \end{itemize}
 %Create  a  short  presentation  that  you  can  use  in  class  to  present  your  results  to  othergroups
-
-
-Read stuff from\cite{Larson2021}.
